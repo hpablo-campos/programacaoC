@@ -49,5 +49,5 @@ int main(){
     // Exibe os dados da segunda carta
     printf("Carta 2:\nEstado: %c\nCódigo da carta: %s\nNome da cidade: %s\nPopulação: %d\nÁrea: %.1f\nPIB: %.2f\nNúmero de pontos turísticos: %d\n", Estado2, CodigoCarta2, NomeCidade2, Populacao2, Area2, PIB2, nPontosTuristicos2);
     return 0;
-
+    // Fim do programa
 }
