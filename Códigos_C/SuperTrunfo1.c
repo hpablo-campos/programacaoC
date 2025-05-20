@@ -10,6 +10,7 @@ int main(){
     float Area1, Area2;
     float PIB1, PIB2;
     int nPontosTuristicos1, nPontosTuristicos2;
+    float densidadePopulacao1, densidadePopulacao2, pibPerCapita1, pibPerCapita2;
 
     // Solicita os dados ao usuário para a primeira carta
     printf("Digite o primeiro estado: \n");
@@ -27,6 +28,10 @@ int main(){
     printf("Digite o número de pontos turísticos da primeira cidade: \n");
     scanf("%d", &nPontosTuristicos1);
 
+    // Cálculo da densidade populacional e PIB per capita para a primeira carta
+    densidadePopulacao1 = Populacao1 / Area1;
+    pibPerCapita1 = (PIB1 * 1e9) / Populacao1;
+
     // Solicita os dados ao usuário para a segunda carta
     printf("Digite o segundo estado: \n");
     scanf(" %c", &Estado2); 
@@ -43,11 +48,15 @@ int main(){
     printf("Digite o número de pontos turísticos da segunda cidade: \n");
     scanf("%d", &nPontosTuristicos2);
 
+    // Cálculo da densidade populacional e PIB per capita para a segunda carta
+    densidadePopulacao2 = Populacao2 / Area2;
+    pibPerCapita2 = (PIB2 * 1e9) / Populacao2;
+
     // Exibe os dados da primeira carta
-    printf("Carta 1:\nEstado: %c\nCódigo da carta: %s\nNome da cidade: %s\nPopulação: %d\nÁrea: %.1f\nPIB: %.2f\nNúmero de pontos turísticos: %d\n", Estado1, CodigoCarta1, NomeCidade1, Populacao1, Area1, PIB1, nPontosTuristicos1);
+    printf("Carta 1:\nEstado: %c\nCódigo da carta: %s\nNome da cidade: %s\nPopulação: %d\nÁrea: %.1f\nPIB: %.2f\nNúmero de pontos turísticos: %d\nDensidade Populacional: %.2f habitantes/KM²\nPIB per Capita: %.2f Reais.\n\n", Estado1, CodigoCarta1, NomeCidade1, Populacao1, Area1, PIB1, nPontosTuristicos1, densidadePopulacao1, pibPerCapita1);
 
     // Exibe os dados da segunda carta
-    printf("Carta 2:\nEstado: %c\nCódigo da carta: %s\nNome da cidade: %s\nPopulação: %d\nÁrea: %.1f\nPIB: %.2f\nNúmero de pontos turísticos: %d\n", Estado2, CodigoCarta2, NomeCidade2, Populacao2, Area2, PIB2, nPontosTuristicos2);
+    printf("Carta 2:\nEstado: %c\nCódigo da carta: %s\nNome da cidade: %s\nPopulação: %d\nÁrea: %.1f\nPIB: %.2f\nNúmero de pontos turísticos: %d\nDensidade Populacional: %.2f habitantes/KM²\nPIB per Capita: %.2f Reais.\n\n", Estado2, CodigoCarta2, NomeCidade2, Populacao2, Area2, PIB2, nPontosTuristicos2, densidadePopulacao2, pibPerCapita2);
     return 0;
     // Fim do programa
 }
