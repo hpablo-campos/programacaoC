@@ -53,10 +53,10 @@ int main(){
     pibPerCapita2 = (PIB2 * 1e9) / Populacao2;
 
     // Exibe os dados da primeira carta
-    printf("Carta 1:\nEstado: %c\nCódigo da carta: %s\nNome da cidade: %s\nPopulação: %d\nÁrea: %.1f\nPIB: %.2f\nNúmero de pontos turísticos: %d\nDensidade Populacional: %.2f habitantes/KM²\nPIB per Capita: %.2f Reais.\n\n", Estado1, CodigoCarta1, NomeCidade1, Populacao1, Area1, PIB1, nPontosTuristicos1, densidadePopulacao1, pibPerCapita1);
+    printf("** Carta 1 **\nEstado: %c\nCódigo da carta: %s\nNome da cidade: %s\nPopulação: %d\nÁrea: %.1f\nPIB: %.2f\nNúmero de pontos turísticos: %d\nDensidade Populacional: %.2f habitantes/KM²\nPIB per Capita: %.2f Reais.\n\n", Estado1, CodigoCarta1, NomeCidade1, Populacao1, Area1, PIB1, nPontosTuristicos1, densidadePopulacao1, pibPerCapita1);
 
     // Exibe os dados da segunda carta
-    printf("Carta 2:\nEstado: %c\nCódigo da carta: %s\nNome da cidade: %s\nPopulação: %d\nÁrea: %.1f\nPIB: %.2f\nNúmero de pontos turísticos: %d\nDensidade Populacional: %.2f habitantes/KM²\nPIB per Capita: %.2f Reais.\n\n", Estado2, CodigoCarta2, NomeCidade2, Populacao2, Area2, PIB2, nPontosTuristicos2, densidadePopulacao2, pibPerCapita2);
+    printf("** Carta 2 **\nEstado: %c\nCódigo da carta: %s\nNome da cidade: %s\nPopulação: %d\nÁrea: %.1f\nPIB: %.2f\nNúmero de pontos turísticos: %d\nDensidade Populacional: %.2f habitantes/KM²\nPIB per Capita: %.2f Reais.\n\n", Estado2, CodigoCarta2, NomeCidade2, Populacao2, Area2, PIB2, nPontosTuristicos2, densidadePopulacao2, pibPerCapita2);
     return 0;
     // Fim do programa
 }
