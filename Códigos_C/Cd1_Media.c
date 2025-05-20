@@ -3,25 +3,31 @@
 int main (){
 
     // Declaração de variáveis
-    int idade, matricula;
-    float altura;
-    char nome[50];
+    float nota1, nota2, nota3;
+    float media;
 
-    // Solicita os dados ao usuário
-    printf("Digite sua idade: \n");
-    scanf("%d", &idade);
+    // Apresentação do programa
+    printf("*** Cálculo da média de três notas ***\n\n");
 
-    printf("Digite sua matrícula: \n");
-    scanf("%d", &matricula);
+    // Entrada de dados
+    printf("Digite a primeira nota: ");
+    scanf("%f", &nota1);
+    printf("Digite a segunda nota: ");
+    scanf("%f", &nota2);
+    printf("Digite a terceira nota: ");
+    scanf("%f", &nota3);
 
-    printf("Digite sua altura: \n");
-    scanf("%f", &altura);
+    // Cálculo da média
+    media = (nota1 + nota2 + nota3) / 3;
 
-    printf("Digite seu nome: \n");
-    scanf("%s", nome);
+    // Exibição do resultado
+    if (media >= 6){
+        printf("Aprovado com média: %.1f\n", media);
+    } 
+         else {
+        printf("Reprovado com média: %.1f\n", media);
+    }
 
-    // Exibe os dados informados
-    printf("Nome do aluno: %s - Matrícula: %d\nIdade: %d - Altura: %.2f \n", nome , matricula, idade, altura);
-
+    // Fim do programa
     return  0;
 }

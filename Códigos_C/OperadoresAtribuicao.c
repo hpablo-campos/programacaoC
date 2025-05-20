@@ -12,7 +12,7 @@ int main (){
 
 
     //Declaração de variáveis
-    int numero1=10, numero2, resultado;
+    int numero1=10, numero2=2, resultado;
 
     resultado = 10;
     printf("O resultado é: %d\n", resultado);
