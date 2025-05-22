@@ -15,11 +15,11 @@ int main(){
 
     // Solicita os dados ao usuário para a primeira carta
     printf("Digite o primeiro estado: \n");
-    scanf(" %c", &Estado1); // Adicionado espaço para consumir '\n' anterior
+    scanf(" %c", &Estado1);
     printf("Digite o código da primeira carta: \n");
-    scanf("%s", CodigoCarta1);
+    scanf("%s", &CodigoCarta1);
     printf("Digite o nome da primeira cidade: \n");
-    scanf("%s", NomeCidade1);
+    scanf("%s", &NomeCidade1);
     printf("Digite a população da primeira cidade: \n");
     scanf("%lu", &Populacao1);
     printf("Digite a área da primeira cidade: \n");
@@ -35,11 +35,11 @@ int main(){
 
     // Solicita os dados ao usuário para a segunda carta
     printf("Digite o segundo estado: \n");
-    scanf(" %c", &Estado2); // Adicionado espaço para consumir '\n' anterior
+    scanf(" %c", &Estado2); 
     printf("Digite o código da segunda carta: \n");
-    scanf("%s", CodigoCarta2);
+    scanf("%s", &CodigoCarta2);
     printf("Digite o nome da segunda cidade: \n");
-    scanf("%s", NomeCidade2);
+    scanf("%s", &NomeCidade2);
     printf("Digite a população da segunda cidade: \n");
     scanf("%lu", &Populacao2);
     printf("Digite a área da segunda cidade: \n");
@@ -68,11 +68,11 @@ int main(){
 
     // Comparação dos Super Poderes
     if (superPoder1 > superPoder2){
-        printf("A carta 1 é a vencedora!\n");
+        printf("A carta %s é a vencedora!\n", CodigoCarta1);
     } else if (superPoder2 > superPoder1){
-        printf("A carta 2 é a vencedora!\n");
+        printf("A carta %s é a vencedora!\n", CodigoCarta2);
     } else {
-        printf("As cartas são iguais!\n");
+        printf("Empate! As cartas possuem o mesmo Super Poder!\n");
     }
 
     return 0;
