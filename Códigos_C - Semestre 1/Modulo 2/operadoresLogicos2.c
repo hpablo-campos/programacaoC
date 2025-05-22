@@ -2,33 +2,48 @@
 
 int main (){
 
-    int numero, par;
+    int opcao;
+    float saldo = 3500.00;
+    float deposito, saque;
 
-    printf("Digite um número: ");
-    scanf ("%d", &numero);
+    printf ("*** ESCOLHA OPÇÃO DIGITANDO O NÚMERO CORRESPONDENTE ***\n");
+    printf ("1 - Consultar saldo\n");
+    printf ("2 - Depósito\n");
+    printf ("3 - Saque\n");
+    printf ("0 - Encerrar\n");
+    printf ("Digite aqui a opção: ");
 
-    if (numero > 0){
-        printf ("O número %d é positivo!\n", numero);
+    scanf ("%d", &opcao);
 
-    } else if (numero == 0){
-        printf ("O número é Zero!\n");
+    switch (opcao) {
+        case 1:
+            printf ("Seu saldo atual é: R$ %.2f\n", saldo);
+        break;
 
-    } else {
-        printf ("O número %d é negativo!\n", numero);
+        case 2:
+            printf ("Digite o valor a ser depositado: R$ ");
+            scanf ("%f", &deposito);
+            saldo = saldo + deposito;
+            printf ("Valor depositado com sucesso!\n");
+            printf ("Seu saldo atual é: R$ %.2f\n", saldo);
+        break;
+
+        case 3:
+            printf ("Saldo atual: R$ %.2f\n", saldo);
+            printf ("Digite o valor a ser sacado: ");
+            scanf ("%f", &saque);
+            saldo = saldo - saque;
+            printf ("Seu saldo atual é: R$ %.2f\n", saldo);
+        break;
+
+    case 0:
+        printf ("Programa encerrado!");
+        break;
+
+    default:
+        printf ("Opção inválida!\n");
+        break;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
     return 0;
 }
