@@ -2,10 +2,12 @@
 
 int main (){
 
+    // Declaração de variáveis
     int opcao;
     float saldo = 3500.00;
     float deposito, saque;
 
+    // Exibe o menu de opções
     printf ("*** ESCOLHA OPÇÃO DIGITANDO O NÚMERO CORRESPONDENTE ***\n");
     printf ("1 - Consultar saldo\n");
     printf ("2 - Depósito\n");
@@ -15,6 +17,7 @@ int main (){
 
     scanf ("%d", &opcao);
 
+    // Verifica a opção escolhida
     switch (opcao) {
         case 1:
             printf ("Seu saldo atual é: R$ %.2f\n", saldo);
