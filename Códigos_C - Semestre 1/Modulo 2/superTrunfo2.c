@@ -186,6 +186,7 @@ int main(){
         break;
     
     default:
+        printf("Opção inválida! Por favor, selecione uma opção entre 1 e 5.\n");
         break;
     }
     return 0;
