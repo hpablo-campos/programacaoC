@@ -4,6 +4,7 @@ int main (){
 
     // declaração de variáveis de controle
     int t = 1, b = 1;
+    int movimentoCompleto = 1;
 
     // Movimentação da Torre: 5x para cima (utilizando while)
     printf ("MOVIMENTAÇÃO DA TORRE\n\n");
@@ -30,6 +31,16 @@ int main (){
         printf ("DIREITA\n");
     }
     
+    // Movimentação do Cavalo: 2x para cima, 1x para direita (utilizando while e for)
+    printf ("MOVIMENTAÇÃO DO CAVALO\n\n");
+    while (movimentoCompleto--){
+        
+        for (int i = 0; i < 2; i++){
+            printf ("CIMA\n");
+        }
+
+        printf("DIREITA\n");
+    }
     
 
     
