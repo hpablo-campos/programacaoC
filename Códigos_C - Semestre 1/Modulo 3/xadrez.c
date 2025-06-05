@@ -26,16 +26,17 @@ void moverRainha (int casas){
     }
 }
 
-void moverCavalo (int casas){
-    for (int vertical = casas; casas > 0; casas--){
-        do printf ("Direita\n");
-        casas--;
-        while (casas = 1);
-
-        moverCavalo (casas-1);
+void moverCavalo (){
+    for (int cima = 0; cima < 2; cima++){
+        printf ("Cima\n\n");
+        
+        for (int direita = 1; direita == 1; direita--){
+            printf ("Direita\n\n");
+            break;
+        }
     }
-
 }
+
 
 int main (){
 
@@ -49,8 +50,7 @@ int main (){
     moverRainha (8); // rainha anda 8 casas.
 
     printf ("\n** MOVIMENTAÇÃO DO CAVALO **\n\n");
-    moverCavalo (2);
+    moverCavalo ();
 
     return 0;
-
 }
