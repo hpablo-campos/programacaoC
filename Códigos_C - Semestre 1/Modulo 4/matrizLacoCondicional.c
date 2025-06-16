@@ -3,25 +3,22 @@
 int main (){
 
     int matriz[3][3] = {{1,2,3}, {4,5,6}, {7,8,9}};
-    int totalPar = 0; 
-    int totalImpar = 0;
+    int target = 5;
+    int found = 0;
 
-    for (int i = 0; i < 3; i++){
-        for (int i = 0; i < count; i++){
-            if (matriz[i][j] %2 == 0){
-                totalPar++;
-            } else {
-                totalImpar++;
+    for (int i  = 0; i < 3; i++){
+        for (int j = 0; j < 3; j++){
+            if (matriz[i][j] == target){
+                printf ("Elemento %d encontrado na posição (%d, %d)\n", target, i, j);
+                found = 1;
+                break;
             }
-            
         }
-        
+        if (found) break;
     }
-
-    printf("%d", totalPar);
-    printf("%d", totalImpar);
-
-
+    if (!found) {
+        prinft ("Elemento %d não encontrado!\n", target);
+    }
 
     return 0;
 }
