@@ -1,20 +1,21 @@
 #include <stdio.h>
 
-void recursive(int numero)  {
-    if (numero > 0){
-        
-        printf("%d ", numero);
-        recursive(numero - 1);
-        
-    }
-}
-
 int main (){
 
-    int quantidade = 5;
+    int controle = 1, num, menor;
 
-    //scanf("%d", &quantidade);
-    recursive(quantidade);
+    for (int cont = 1; cont <= 20; cont++){
+        scanf("%d", &num);
+        if (controle == 1){
+            menor = num; // Inicializa o menor número com o primeiro valor lido.
+            else if (num < menor) {
+                menor = num; // Atualiza o menor número se o atual for menor.
+            }
+        }
+        controle++;
+    }
+
+
 
     return 0;
 }
